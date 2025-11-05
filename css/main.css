@@ -570,5 +570,10 @@ margin: 50px 0 30px 0;
     background-color: var(--category-pasta);
     margin: 200px auto;
     width: var(--width-12col);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
   
 }
+
