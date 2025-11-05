@@ -568,35 +568,7 @@ margin: 50px 0 30px 0;
 .footer-container{
 
     background-color: var(--category-pasta);
-
     margin: 200px auto;
     width: var(--width-12col);
   
-}
-
-
-.footer-block-left{
-    padding: 20px 20px 20px 20px;
-
-
-}
-
-.footer-text-left{
- padding-left: 50px;
- align-items: top;
-
-list-style-type: none;  
-
-}
-
-.footer-text-left ul{
-list-style-type: none;
-margin-right:100px;
-
-}
-
-.footer-text-right ul{
-    list-style-type: none;
-    grid-column: 4/5;
-
 }
