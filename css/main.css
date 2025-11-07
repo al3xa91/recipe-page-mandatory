@@ -620,8 +620,8 @@ list-style: none;
     display: flex;
     align-items: center;
     justify-content: start;
+   
 }
-
 
 
 .footer-container-block-left-text-right{
@@ -663,13 +663,17 @@ list-style: none;
 .footer-container-block-right-text-top a{
 
 color: #ededed;
+text-decoration: none;
 
 }
 
-.footer-container-block-right-text-top a1{
+.footer-container-block-right-text-top li:last-child{
+    text-decoration: underline;
+}
+
+.footer-container-block-right-text-top li{
 
 color: #ededed;
-text-decoration: none;
 }
 
 .footer-container-block-right-text-top ul{
