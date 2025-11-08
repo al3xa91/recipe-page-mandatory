@@ -209,7 +209,7 @@ margin:40px 0 0 0;
 
 .hero-container-right{
     display: grid;
-   
+   0px
      grid-column: 7/span9;
      grid-row: 1/2;
      margin:200px 100px 0 0;
@@ -220,7 +220,7 @@ margin:40px 0 0 0;
 
 .hero-container-right img{
  
-    
+    border-radius: 600px;
 
 
    
