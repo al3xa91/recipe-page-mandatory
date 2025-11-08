@@ -569,7 +569,7 @@ margin: 50px 0 30px 0;
 
     background-color: var(--category-pasta);
     margin: 200px auto;
-    width: var(--width-12col);
+    width: var(--width-full);
     display: flex;
     
 }
@@ -580,6 +580,8 @@ margin: 50px 0 30px 0;
 grid-template-columns: repeat(4,3fr);
 grid-template-rows: auto;
 list-style: none;
+margin: 0 300px 0 300px;
+position: relative;
 }
 
 
