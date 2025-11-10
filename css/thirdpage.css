@@ -198,7 +198,7 @@ html {
     margin: 0px 0;
     color: var(--background-color-light);
     font-size: 14px;
-    font-weight: 100;
+    font-weight: 400;
     width: 50%;
     height: 20px;
 }
@@ -216,31 +216,66 @@ html {
 .filter-category-checkbox input[type="radio"]#chicken {
     accent-color: var(--category-chicken);
 }
+
 .filter-category-checkbox input[type="radio"]#seafood {
     accent-color: var(--category-seafood);
 }
+
 .filter-category-checkbox input[type="radio"]#meat {
     accent-color: var(--category-meats);
 }
+
 .filter-category-checkbox input[type="radio"]#veg {
     accent-color: var(--category-veg);
 }
+
 .filter-category-checkbox input[type="radio"]#dessert {
     accent-color: var(--category-dessert);
 }
+
 .filter-category-checkbox input[type="radio"]#misc {
     accent-color: var(--category-misc);
 }
+
 .filter-category-checkbox input[type="radio"]#pasta {
     accent-color: var(--category-pasta);
 }
+
+/* data category setup  start */
+h4[data-category="seafood"] {
+    border-left: 1px solid var(--category-seafood)
+}
+
+p[data-category="seafood"] {
+    color: var(--category-seafood);
+}
+
+span[data-category="seafood"] {
+    color: var(--category-seafood);
+}
+
+/* data category setup end */
+
+h3[data-category="chicken"] {
+    border-left: 1px solid var(--category-chicken)
+}
+
+p[data-category="chicken"] {
+    color: var(--category-chicken);
+}
+
+span[data-category="chicken"] {
+    color: var(--category-chicken);
+}
+
 
 .serp {
     border-top: 1px solid var(--color_black);
     width: var(--width-12col);
     margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(12, 1fr); ;
+    grid-template-columns: repeat(12, 1fr);
+    ;
 }
 
 .serp-container {
@@ -255,6 +290,7 @@ html {
     justify-content: space-between;
     border-bottom: 1px solid var(--background-color-light);
     padding: 50px 0;
+
 }
 
 .serp-item h3 {
@@ -262,15 +298,25 @@ html {
     padding-left: 9px;
     font-size: 16px;
 
-    
+
 }
- .category-selection-serp-item1{
+
+.serp-item h4 {
+    color: var(--background-color-light);
+    padding-left: 9px;
+    font-size: 16px;
+
+
+}
+
+.category-selection-serp-item1 {
     color: var(--category-chicken);
     text-transform: uppercase;
 
-    
- }
-.category-selection-serp-item2{
+
+}
+
+.category-selection-serp-item2 {
     color: var(--category-seafood);
     text-transform: uppercase;
 }
@@ -280,11 +326,148 @@ html {
     font-size: 22px;
     text-transform: uppercase;
 
+
 }
-   
+
 
 .serp-item p {
     color: var(--background-color-light);
     font-size: 16px;
-    font-weight: 300;
+    font-weight: 400;
+}
+
+
+
+.footer-container {
+
+
+
+
+    background-color: var(--category-pasta);
+    margin: 1000px 0px 0px 0px;
+    width: var(--width-full);
+
+}
+
+.footer-container-block {
+    width: var(--width-12col);
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto;
+    list-style: none;
+    margin-left: 120px;
+    position: relative;
+}
+
+
+.footer-container-block-left {
+    display: grid;
+    grid-column: 1 /7;
+    grid-row: span;
+    margin: 50px 80px 40px 10px;
+
+
+
+
+}
+
+.footer-container-block-left-text-left {
+    grid-column: 1/7;
+
+
+
+
+}
+
+.footer-container-block-left-text-left ul {
+
+    list-style-type: none;
+
+
+}
+
+.footer-container-block-left-text-left a {
+    text-decoration: none;
+    color: var(--color-black);
+    line-height: 30px;
+}
+
+.footer-container-block-left-text-left li {
+    color: var(--color-black);
+    display: flex;
+    align-items: center;
+    justify-content: start;
+
+}
+
+
+.footer-container-block-left-text-right {
+    grid-column: 7/13;
+
+
+}
+
+.footer-container-block-left-text-right ul {
+    list-style-type: none;
+}
+
+.footer-container-block-left-text-right a {
+    text-decoration: none;
+    color: var(--color-black);
+    line-height: 30px;
+
+}
+
+.footer-container-block-right {
+
+    border-left: 2px solid var(--background-color-light);
+
+    display: grid;
+    grid-column: 7/13;
+    grid-row: span;
+    margin-top: 50px;
+    margin-bottom: 40px;
+    text-align: right;
+    font-size: 12px;
+    font-weight: 400;
+
+
+
+
+}
+
+.footer-container-block-right-text-top a {
+
+    color: #ededed;
+    text-decoration: none;
+
+}
+
+.footer-container-block-right-text-top li:last-child {
+    text-decoration: underline;
+}
+
+.footer-container-block-right-text-top li {
+
+    color: #ededed;
+}
+
+.footer-container-block-right-text-top ul {
+    list-style-type: none;
+}
+
+.footer-container-block-right-text-bottom {
+    display: flex;
+    justify-content: end;
+
+    text-align: right;
+    color: var(--color-black);
+    margin-top: 20px;
+}
+
+.footer-container-block-right-text-bottom h6 {
+    padding-left: 10px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: auto;
 }

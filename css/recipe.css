@@ -475,7 +475,7 @@ html {
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: auto;
     list-style: none;
-    margin-left: 280px;
+    margin-left: 120px;
     position: relative;
 }
 
