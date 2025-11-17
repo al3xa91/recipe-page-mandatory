@@ -366,7 +366,7 @@ span[data-category="chicken"] {
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: auto;
     list-style: none;
-    margin-left: 120px;
+    margin: 0px auto 0px auto;
     position: relative;
 }
 
@@ -481,4 +481,29 @@ span[data-category="chicken"] {
     font-weight: 400;
     font-size: 12px;
     line-height: auto;
+}
+
+
+
+@media (width < 1200px ) { 
+    :root {
+        --width-12col: 100%;
+    }
+}
+
+@media (width<600px){
+
+    .search-box-searchpage{
+        padding-left: 50px;
+    }
+   
+
+    .filter-category-checkbox{
+        display: none;
+    
+    }
+
+    .footer-container{
+        display: none;
+    }
 }

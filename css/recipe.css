@@ -175,7 +175,8 @@ html {
 .hero-text-specifics {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
+
+    gap: px;
     color: var(--category-pasta);
     margin-top: 40px;
 
@@ -475,7 +476,7 @@ html {
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: auto;
     list-style: none;
-    margin-left: 120px;
+    margin: 0 auto 0 auto;
     position: relative;
 }
 
@@ -591,4 +592,44 @@ html {
     font-weight: 400;
     font-size: 12px;
     line-height: auto;
+}
+
+
+@media (width < 1200px ) { 
+    :root {
+        --width-12col: 100%;
+    }
+}
+
+@media (width<650px){
+    .hero-container-right img{
+        display: none;
+    }
+
+    .instructions-content-right{
+        display: none;
+
+    }
+
+   .instructions-headline-bonus-left{
+    font-size: 20px;
+   }
+
+   .instructions-headline-bonus-right{
+    font-size: 20px;
+   }
+   
+   
+.footer{
+   /*  margin-right: 120px; */
+   display: none;
+}
+
+.hero-text-specifics p {
+    padding-right: 50px;
+    
+   
+
+}
+
 }
